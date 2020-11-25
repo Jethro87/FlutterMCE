@@ -1,0 +1,16 @@
+name: flutter_mce
+description: Simplistic rich text editor for Flutter
+version: 0.0.1
+author: Peter Aleksander Bizjak
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^4.3.2+2
+
+flutter:
