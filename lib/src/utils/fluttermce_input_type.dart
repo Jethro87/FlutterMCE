@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_mce/src/utils/colors.dart';
+
 enum FlutterMCEInputType {
   header1,
   normal,

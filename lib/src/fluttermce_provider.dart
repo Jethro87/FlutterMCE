@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mce/src/fluttermce_field.dart';
+import 'package:flutter_mce/src/utils/fluttermce_input_type.dart';
 
 class FlutterMCEProvider extends ChangeNotifier {
   FlutterMCEInputType inputType;
