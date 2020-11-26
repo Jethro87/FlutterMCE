@@ -13,5 +13,3 @@ dependencies:
     sdk: flutter
   provider: ^4.3.2+2
   font_awesome_flutter: ^8.10.0
-
-flutter:

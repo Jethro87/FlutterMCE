@@ -1,8 +1,3 @@
-import 'package:flutter/material.dart';
-
-const Color COLOR_TEXT_PRIMARY = const Color.fromARGB(255, 51, 51, 51);
-const Color COLOR_TEXT_SECONDARY = const Color.fromARGB(255, 143, 143, 148);
-
 enum FlutterMCEInputType {
   header1,
   normal,
@@ -100,39 +95,5 @@ extension FlutterMCEInputTypeStyle on FlutterMCEInputType {
       default:
         return '';
     }
-  }
-}
-
-class FlutterMCEField extends StatelessWidget {
-  final FlutterMCEInputType inputType;
-  final TextEditingController controller;
-  final FocusNode focusNode;
-
-  const FlutterMCEField({
-    Key key,
-    @required this.inputType,
-    this.controller,
-    this.focusNode,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-      controller: controller,
-      focusNode: focusNode,
-      autofocus: true,
-      keyboardType: TextInputType.multiline,
-      maxLines: null,
-      cursorColor: COLOR_TEXT_SECONDARY,
-      textAlign: TextAlign.start,
-      decoration: InputDecoration(
-        border: InputBorder.none,
-        prefixText: inputType.prefix,
-        prefixStyle: inputType.textStyle,
-        isDense: true,
-        contentPadding: inputType.padding,
-      ),
-      style: inputType.textStyle,
-    );
   }
 }

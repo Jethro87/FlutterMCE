@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mce/src/fluttermce_field.dart';
+import 'package:flutter_mce/src/utils/fluttermce_input_type.dart';
+import 'package:flutter_mce/src/widgets/fluttermce_field.dart';
 import 'package:flutter_mce/src/fluttermce_provider.dart';
-import 'package:flutter_mce/src/fluttermce_toolbar.dart';
+import 'package:flutter_mce/src/widgets/fluttermce_toolbar.dart';
 import 'package:provider/provider.dart';
 
 class FlutterMCE extends StatefulWidget {
