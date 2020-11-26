@@ -5,7 +5,6 @@ const Color COLOR_TEXT_SECONDARY = const Color.fromARGB(255, 143, 143, 148);
 
 enum FlutterMCEInputType {
   header1,
-  header2,
   normal,
   italic,
   bold,
@@ -21,12 +20,6 @@ extension FlutterMCEInputTypeStyle on FlutterMCEInputType {
         return TextStyle(
           color: COLOR_TEXT_PRIMARY,
           fontSize: 28.0,
-          fontWeight: FontWeight.w700,
-        );
-      case FlutterMCEInputType.header2:
-        return TextStyle(
-          color: COLOR_TEXT_PRIMARY,
-          fontSize: 22.0,
           fontWeight: FontWeight.w700,
         );
       case FlutterMCEInputType.normal:
@@ -73,13 +66,6 @@ extension FlutterMCEInputTypeStyle on FlutterMCEInputType {
       case FlutterMCEInputType.header1:
         return EdgeInsets.only(
           top: 24.0,
-          right: 16.0,
-          bottom: 8.0,
-          left: 16.0,
-        );
-      case FlutterMCEInputType.header2:
-        return EdgeInsets.only(
-          top: 8.0,
           right: 16.0,
           bottom: 8.0,
           left: 16.0,
